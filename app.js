@@ -23,4 +23,5 @@ async function startApp(){
 
 //Chamando função
 startApp();
+//Function que faz a repetição do startApp()
 setInterval(() => startApp(), 5000);
