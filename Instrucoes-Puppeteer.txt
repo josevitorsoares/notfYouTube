@@ -1,5 +1,0 @@
-Primeiro, instalar node e npm
-
-Segundo:
-Instalando Puppeteer:
-$ npm install puppeteer 
