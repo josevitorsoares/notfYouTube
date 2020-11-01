@@ -4,7 +4,7 @@
   "description": "Projeto para pegar sempre o link do ultimo video de um canal e mandar por WhatsApp",
   "main": "app.js",
   "scripts": {
-    "start": "node index"
+    "start": "node app"
   },
   "author": "",
   "license": "ISC",
