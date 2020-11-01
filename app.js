@@ -74,4 +74,4 @@ async function startAppJS() {
 startAppJS();
 
 //Function que faz a repetição da execução do startAppJS() a cada 2 minutos (120000)
-setInterval(() => startAppJS(), 5000);
+setInterval(() => startAppJS(), 120000);
