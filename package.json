@@ -1,7 +1,7 @@
 {
   "name": "projeto-yt-68",
   "version": "1.0.0",
-  "description": "Projeto para pegar sempre o link do ultimo video de um canal e mandar por WhatsApp",
+  "description": "Projeto para pegar sempre o link do ultimo video de um canal e mandar por email",
   "main": "app.js",
   "scripts": {
     "start": "node app.js"
