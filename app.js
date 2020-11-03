@@ -48,7 +48,7 @@ function sendEmail(link_video) {
 // Function principal que executa o que é proposto pelo robô
 async function startAppJS() {
     const browser = await puppeteer.launch({
-        args: [
+        'args': [
             '--no-sandbox',
             '--disable-setuid-sandbox',
         ],
