@@ -37,7 +37,7 @@ function sendEmail(link_video) {
     });
 
     var emailToSend = {
-        from: 'jose.vitor.clashbr@gmail.com',
+        from: 'capitaocaverna012@gmail.com',
         to: 'jose.vitor.clashbr@gmail.com',
         subject: 'Vídeo novo do Diego Faustino',
         text: 'Esse é o link para o novo vídeo do Diego Faustino: \n' + link_video
@@ -54,7 +54,7 @@ function sendEmail(link_video) {
 
 // Function principal que executa o que é proposto pelo robô
 async function startAppJS() {
-    const browser = await puppeteer.launch({args: ['--no-sandbox']})
+    const browser = await puppeteer.launch({args: ['--no-sandbox', '--disable-setuid-sandbox']})
     //const browser = await puppeteer.launch()
     const page = await browser.newPage()
     
