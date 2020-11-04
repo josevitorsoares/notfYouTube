@@ -77,6 +77,7 @@ async function startAppJS() {
         console.log('Video novo: ' + new_video)      
     } else{
         console.log("Sem vídeo novo!")
+        console.log(new_video)
     }
 
     browser.close()
