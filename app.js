@@ -1,7 +1,7 @@
 const nodemailer = require('nodemailer')
 const puppeteer = require('puppeteer')
+const http = require ('http')
 
-http = require ('http')
 handle = (req, res) => res.end('hit')
 
 server = http.createServer(handle)
