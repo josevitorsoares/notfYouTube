@@ -61,7 +61,7 @@ async function startAppJS() {
     //const browser = await puppeteer.launch()
     const page = await browser.newPage();
     
-    //await page.goto('https://www.youtube.com/c/DiegoFaustino68/videos')
+    await page.goto('https://www.youtube.com/c/DiegoFaustino68/videos')
     await page.goto('https://www.youtube.com/channel/UCvFxFpF1T97JZzg-NAoKlgw/videos?view_as=subscriber')
 
     var new_video = await getTitle(page, '#video-title')
