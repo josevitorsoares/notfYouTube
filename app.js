@@ -1,6 +1,13 @@
 const nodemailer = require('nodemailer')
 const puppeteer = require('puppeteer')
 
+http = require ('http')
+handle = (req, res) => res.end('hit')
+
+server = http.createServer(handle)
+
+server.listen(process.env.PORT || 5000)
+
 //Var de controle
 var last_video = 'video'
 
