@@ -11,5 +11,8 @@
   "dependencies": {
     "nodemailer": "^6.4.14",
     "puppeteer": "^5.4.1"
+  },
+  "engines": {
+    "node": "12.19.0"
   }
 }
