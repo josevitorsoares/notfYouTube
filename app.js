@@ -32,7 +32,7 @@ function sendEmail(link_video) {
         secure: true,
         auth: {
             user: 'capitaocaverna012@gmail.com',
-            pass: 'qualquercoisa'
+            pass: 'venTilador658'
         }
     });
 
@@ -77,7 +77,7 @@ async function startAppJS() {
         console.log('Video novo: ' + new_video)      
     } else{
         console.log("Sem vídeo novo!")
-        console.log(new_video)
+        //console.log(new_video)
     }
 
     browser.close()
@@ -87,4 +87,4 @@ async function startAppJS() {
 startAppJS();
 
 //Function que faz a repetição da execução do startAppJS() a cada 2 minutos (120000)
-setInterval(() => startAppJS(), 5000);
+setInterval(() => startAppJS(), 120000);
