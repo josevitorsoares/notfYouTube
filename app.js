@@ -3,9 +3,7 @@ const puppeteer = require('puppeteer')
 const http = require('http')
 
 handle = (req, res) => res.end('hit')
-
 server = http.createServer(handle)
-
 server.listen(process.env.PORT || 5000)
 
 //Var de controle
@@ -58,10 +56,9 @@ async function startAppJS() {
         args: ['--no-sandbox', '--disable-setuid-sandbox'],
         ignoreDefaultArgs : [ '--disable-extensions' ] ,
     });
-    //const browser = await puppeteer.launch()
+
     const page = await browser.newPage();
     
-    //await page.goto('https://www.youtube.com/channel/UCvFxFpF1T97JZzg-NAoKlgw/videos')
     await page.goto('https://www.youtube.com/c/DiegoFaustino68/videos')
 
     var new_video = await getTitle(page, '#video-title')
@@ -76,7 +73,7 @@ async function startAppJS() {
         
         console.log('Video novo: ' + new_video)      
     } else{
-        console.log("Sem vídeo novo!")
+        console.log('Sem vídeo novo!')
         //console.log(new_video)
     }
 
