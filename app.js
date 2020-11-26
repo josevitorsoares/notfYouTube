@@ -2,6 +2,7 @@ const nodemailer = require('nodemailer')
 const puppeteer = require('puppeteer')
 const http = require('http')
 
+//Código para utilização da porta 5000 e resolução do erro no Heroku
 handle = (req, res) => res.end('hit')
 server = http.createServer(handle)
 server.listen(process.env.PORT || 5000)
@@ -68,13 +69,11 @@ async function startAppJS() {
     } else if(new_video != last_video){
         var link = await getLink(page, '#video-title')
 
-        sendEmail(link)
         last_video = new_video
-        
+        sendEmail(link);
         console.log('Video novo: ' + new_video)      
     } else{
         console.log('Sem vídeo novo!')
-        //console.log(new_video)
     }
 
     browser.close()
